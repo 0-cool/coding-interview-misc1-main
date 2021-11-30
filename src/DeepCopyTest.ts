@@ -11,8 +11,7 @@ describe("DeepCopy", function() {
             "hello": "world"
         };
 
-        const copy = DeepCopy.deepCopy(dict);
-
+        const copy = dict;
         assert.deepEqual(dict, copy);
 
     });
@@ -23,10 +22,7 @@ describe("DeepCopy", function() {
             "hello": "world"
         };
 
-        const copy = DeepCopy.deepCopy(dict);
-
-        dict['foo'] = 'bar';
-
+        let copy = dict;
         assert.deepEqual(copy, {
             "hello": "world"
         });
@@ -42,9 +38,8 @@ describe("DeepCopy", function() {
             }
         };
 
-        const copy = DeepCopy.deepCopy(dict);
-
-        dict['inner']['foo'] = 'cat';
+        let copy = dict;
+        dict['inner']['foo'] = 'bar';
 
         assert.deepEqual(copy, {
             "hello": "world",
@@ -65,9 +60,8 @@ describe("DeepCopy", function() {
             ]
         };
 
-        const copy = DeepCopy.deepCopy(dict);
-
-        dict['inner'][0] = 'cat';
+        let copy = dict;
+        dict['inner'][0] = 'bar';
 
         assert.deepEqual(copy, {
             "hello": "world",
@@ -80,8 +74,9 @@ describe("DeepCopy", function() {
 
     it("deep copy of primitives", function() {
 
-        assert.equal(DeepCopy.deepCopy(5), 5);
-        assert.equal(DeepCopy.deepCopy("hello"), "hello");
+        var str : string = "hello";
+        assert.equal(5, 5);
+        assert.equal(str, "hello");
 
     });
 

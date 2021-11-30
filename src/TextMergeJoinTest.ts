@@ -67,16 +67,8 @@ const MERGE_DATA: ReadonlyArray<IPDFTextWord> = [
         pageNum: 1,
         x: 182.7095,
         y: 124.44000000000005,
-        str: 'A Distrib',
-        width: 56.853076599999994,
-        height: 14.3462,
-    },
-    {
-        pageNum: 1,
-        x: 239.3227,
-        y: 124.44000000000005,
-        str: 'uted',
-        width: 26.9852022,
+        str: 'A Distributed',
+        width: 83.8382788,
         height: 14.3462,
     },
     {

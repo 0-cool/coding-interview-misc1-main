@@ -42,9 +42,7 @@ export const RememberPassword = () => {
     // const [value, setValue] = useLocalStorageState('remember-password', 'off');
 
     return (
-        <input type="checkbox"
-               value={value}
-               onChange={event => setValue(event.currentTarget.value)}/>
+        <input type="checkbox" value={value} onChange={event => setValue(event.currentTarget.value)}/>
     );
 
 }

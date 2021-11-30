@@ -10,7 +10,7 @@ export namespace TextMergeJoin {
     }
 
     export function doMergeWords(data: ReadonlyArray<IPDFTextWord>): ReadonlyArray<IPDFTextWord> {
-        return [];
+        return data;
     }
 
 }

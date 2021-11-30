@@ -11,23 +11,25 @@
  *
  * The ordering of the push operations must be kept.
  */
-class RingBuffer<T> {
+export default class RingBuffer<T> {
 
-    constructor(capacity: number) {
+    capacity: number;
+    constructor(_capacity: number) {
+        this.capacity = _capacity;
     }
 
     public push(value: T) {
 
     }
 
-    public peek(): T | undefined {
+    public peek(): T | number {
         // not implemented
-        return undefined;
+        return this.capacity;
     }
 
-    public pop(): T | undefined {
+    public pop(): T | number {
         // not implemented
-        return undefined;
+        return this.capacity;
     }
 
 }
